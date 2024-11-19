@@ -1,0 +1,174 @@
+/* Resetando o estilo básico do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte padrão */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 50px;
+    height: 50px;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Hero */
+.hero {
+    background-color:#3f2828;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Seção Sobre */
+.sobre {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seção de Serviços */
+.servicos {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.servicos h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.servico {
+    margin: 20px 0;
+}
+
+.servico h3 {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.servico p {
+    font-size: 16px;
+}
+
+/* Seção de Contato */
+.contato {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contato label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+}
