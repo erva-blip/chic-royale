@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    
 }
 
 /* Cabeçalho */
@@ -19,40 +20,53 @@ header {
     color: white;
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-header img {
+header img{
     width: 50px;
     height: 50px;
-    display: none; /* Ocultar logo no celular */
 }
 
 header .logo h1 {
     font-size: 24px;
-    display: none; /* Ocultar título da logo no celular */
 }
 
-header nav {
-    display: none; /* Ocultar nav no celular */
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Seção Hero */
 .hero {
-    background-color: #3f2828;
+    background-color:#3f2828;
     color: white;
     text-align: center;
     padding: 60px 20px;
 }
 
 .hero h2 {
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Seção Sobre */
@@ -63,13 +77,13 @@ header nav {
 }
 
 .sobre h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
 .sobre p {
     font-size: 16px;
-    max-width: 90%; /* Reduzir a largura máxima no celular */
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -81,7 +95,7 @@ header nav {
 }
 
 .servicos h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
@@ -90,12 +104,12 @@ header nav {
 }
 
 .servico h3 {
-    font-size: 20px;
+    font-size: 24px;
     color: #007bff;
 }
 
 .servico p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* Seção de Contato */
@@ -106,12 +120,12 @@ header nav {
 }
 
 .contato h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
 .contato form {
-    max-width: 100%; /* Formulário ocupa toda a largura disponível */
+    max-width: 600px;
     margin: 0 auto;
     text-align: left;
 }
@@ -151,15 +165,14 @@ footer {
     padding: 20px;
     margin-top: 40px;
     position: fixed;
-    bottom: 0;
-    width: 100%;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
-    font-size: 12px; /* Reduzir o tamanho da fonte no rodapé no celular */
+    font-size: 14px;
 }
 
-/* Ajustes para telas pequenas (mobile-first) */
 @media (max-width: 768px) {
     header {
         padding: 15px;
@@ -170,7 +183,7 @@ footer p {
     }
 
     header nav ul li {
-        display: none;
+        display:none;
     }
 
     .hero h2 {
